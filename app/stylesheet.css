@@ -1,0 +1,10 @@
+p{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.remove-btn{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
