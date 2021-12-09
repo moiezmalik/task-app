@@ -56,8 +56,19 @@ function removeElement(id) {
     if (removeBtn) {
         const taksID = document.getElementById(id);
         taksID.remove();
-        taskArr.id.filter(n => n !== id);
+        let index = null;
+        for (let i = 0; i < taskArr.length; i++) {
+            if (taskArr[i].id == id) {
+                index = i;
+                break;
+            }
+        }
+        console.log("Array Index", index);
+
+        taskArr.splice(index, 1);
+
         console.log(taskArr);
+
     }
 }
 
